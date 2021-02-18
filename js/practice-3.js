@@ -1,4 +1,4 @@
-/*  3.2 */
+/*  homework-03-task-2 */
 // const countProps = function (obj) {
 // const props = Object.values(obj);
 // let sum = 0;
@@ -11,7 +11,7 @@
 // console.log(countProps({ name: 'Mango', age: 2 })); // 2
 // console.log(countProps({ mail: 'poly@mail.com', isOnline: true, score: 500 }));
 
-/* 3.3 */
+/* homework-03-task-3 */
 
 const findBestEmployee = function(employees) {
 const amountOfTasks = Object.values(employees);

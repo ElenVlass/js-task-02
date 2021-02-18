@@ -1,4 +1,4 @@
-/* #7/mod 5*/
+/* homework-05-task-7auto*/
 // function StringBuilder (baseValue) {
 //   this.value = baseValue;
 //   };
@@ -22,7 +22,7 @@
 
 
 
-/* 12/ 5 */
+/* homework-05-task-12auto */
 // class Storage {
 //   #items;
 //   constructor(items) {
@@ -47,7 +47,7 @@
 //   storage.removeItem("Пролонгер");
 //   console.log(storage.getItems()); // ["Нанитоиды", "Антигравитатор", "Дроид"]
 
-/* 13/5 */
+/* homework-05-task-13auto */
 
 // class StringBuilder {
 //   #value;
@@ -78,7 +78,7 @@
 //   builder.padBoth('=');
 //   console.log(builder.getValue()); // '=^.^='
 
-/* 16/5 */
+/* homework-05-task-16auto */
 // class Car {
 //   static #MAX_PRICE = 50000;
 //   // Пиши код ниже этой строки
@@ -99,7 +99,7 @@
 // console.log(Car.checkPrice(bmw.price)); // Внимание! Цена превышает допустимую.
 
 
-/* 19/5 */
+/* homework-05-task-19auto */
 class User {
   email;
   constructor(email) {

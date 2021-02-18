@@ -1,4 +1,4 @@
-/* task 2.5 */
+/* homework-02-task-5 */
 /*Напиши функцию checkForSpam(message), принимающую 1 параметр message - строку. 
 Функция проверяет ее на содержание слов spam и sale. 
 Если нашли зарещенное слово то функция возвращает true, 
@@ -24,7 +24,7 @@
 // console.log(checkForSpam('Latest technology news'));
 // console.log(checkForSpam('SPAM How to earn fast money?'));
 
-// /* task 2.6 */
+// /* homework-02-task-6 */
 // let input;
 // const numbers = [];
 // let total = 0;
@@ -41,7 +41,7 @@
 // }
 // console.log(total);
 
-// /* task 2.7 */
+// /* homework-02-task-7 */
 /*
 Є масив logins з логінами користувачів. 
 Напиши скрипт додавання логіна в масив logins. 
