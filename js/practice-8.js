@@ -102,11 +102,11 @@ return this.balance -= amount;}
      * Метод ищет и возвращает объект транзации по id
      */
     getTransactionDetails(id) {
-     for (let i = 0; i < this.transactions.length; i +=1) {
-         if(this.transactions[i].id === id)
-         return this.transactions[i];
-     }
-
+    //  for (let i = 0; i < this.transactions.length; i +=1) {
+    //      if(this.transactions[i].id === id)
+    //      return this.transactions[i];
+    //  }
+   return this.transactions.find(transaction => transaction.id === id)
     },
   
     /*
@@ -114,12 +114,13 @@ return this.balance -= amount;}
      * определенного типа транзакции из всей истории транзакций
      */
     getTransactionTotal(type) {
-        let total = 0;
-for (const obj of this.transactions) {
-    if(obj.type === type) {
-total += obj.amount;
-    }
-}return total;
+//         let total = 0;
+// for (const obj of this.transactions) {
+//     if(obj.type === type) {
+// total += obj.amount;
+//     }
+// }return total;
+return this.transactions.filter(transaction => transaction.type === type).reduce((acc, transaction) => acc + transaction.amount, 0)
     },
   };
   console.log(account.createTransaction(566, 'deposit'));
