@@ -14,17 +14,29 @@
 /* homework-03-task-3 */
 
 const findBestEmployee = function(employees) {
-const amountOfTasks = Object.values(employees);
-const employeeName = Object.keys(employees);
-let biggestAmount = amountOfTasks[0];
-let indexOfWinner = 0;
-for (let i=0; i< amountOfTasks.length; i += 1) {
-    if (amountOfTasks[i] >  biggestAmount){
-        biggestAmount = amountOfTasks[i];
-        indexOfWinner = i;
+// const amountOfTasks = Object.values(employees);
+// const employeeName = Object.keys(employees);
+// let biggestAmount = amountOfTasks[0];
+// let indexOfWinner = 0;
+// for (let i=0; i< amountOfTasks.length; i += 1) {
+//     if (amountOfTasks[i] >  biggestAmount){
+//         biggestAmount = amountOfTasks[i];
+//         indexOfWinner = i;
+// }
+// }
+// return employeeName[indexOfWinner];
+
+
+const entries = Object.entries(employees);
+let maxValue = entries[0][1];
+let bestEmploee = entries[0][0];
+for (const [name, value] of entries) {
+  if(value > maxValue) {
+    maxValue  = value;
+    bestEmploee = name;
+  }
 }
-}
-return employeeName[indexOfWinner];
+return bestEmploee;
 }
 
 console.log(
@@ -44,6 +56,7 @@ console.log(
   }),
 ); // mango
 
+
 console.log(
   findBestEmployee({
     lux: 147,
@@ -52,4 +65,5 @@ console.log(
     chelsy: 38,
   }),
 ); // lux
+
 
